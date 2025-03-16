@@ -1,0 +1,49 @@
+{
+  "solution": [
+    {
+      "id" : 1,
+      "title" : "Property Search and Listing",
+      "description" : "Discover available properties, uncover your ideal living space, start exploring now.",
+      "imageUrl" : "/solutions/magnifier.svg"
+    },
+    {
+      "id" : 2,
+      "title" : "Property Valuation",
+      "description" : "Thorough property assessment, accurate valuations, crucial for informed real estate decisions.",
+      "imageUrl" : "/solutions/chart.svg"
+    },
+    {
+      "id" : 3,
+      "title" : "Property Management",
+      "description" : "Professional property oversight, maximizing profitability, and preserving asset value seamlessly.",
+      "imageUrl" : "/solutions/home.svg"
+    }
+  ],
+  "fqa": [
+    {
+      "id": 1,
+      "question": "How do I start the home buying process?",
+      "answer": "Begin by determining your budget and preferences. Then, explore listings online or contact a real estate agent to help you find suitable properties."
+    },
+    {
+      "id": 2,
+      "question": "What factors should I consider when choosing a neighborhood?",
+      "answer": "Look for safety, convenience, and future growth. Check nearby schools, amenities, and market trends before making a decision."
+    },
+    {
+      "id": 3,
+      "question": "How can I determine the value of my property?",
+      "answer": "Compare similar listings, use online valuation tools, or consult a real estate expert for an accurate market estimate."
+    },
+    {
+      "id": 4,
+      "question": "What steps are involved in selling a home?",
+      "answer": "Prepare your home, set a competitive price, list it online, attract buyers, negotiate offers, and close the deal smoothly."
+    },
+    {
+      "id": 5,
+      "question": "How can I improve my credit score before applying for a mortgage?",
+      "answer": "Pay bills on time, reduce debt, avoid new credit inquiries, and check your credit report for errors."
+    }
+  ]
+}

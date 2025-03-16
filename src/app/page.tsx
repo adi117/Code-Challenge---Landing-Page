@@ -1,10 +1,13 @@
-import SolutionList from "@/features/solutions/components/solutions-list";
+import SolutionSection from "@/features/solutions";
+import FQA from "@/features/fqa";
+import Footer from "@/features/footer";
 
 export default function Home() {
   return (
     <div>
-      Hello World
-      <SolutionList/>
+      <SolutionSection/>
+      <FQA/>
+      <Footer/>
     </div>
   );
 }
