@@ -1,7 +1,6 @@
 "use client";
 
 import { FC, useState } from "react";
-import Image from "next/image";
 import { cn } from "@/utils/cn";
 
 interface AccordionProps {
@@ -17,17 +16,15 @@ const Accordion: FC<AccordionProps> = ({ question, answer }) => {
     <div className="flex flex-col p-6 rounded-3xl bg-white">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl">{question}</h2>
-        <button
+        <div
           onClick={() => setIsOpen(!isOpen)}
-          className={cn("p-2.5 rounded-full", isOpen ? "bg-[#3B6DFF]" : "bg-[#E6ECFE]")}
-        >
-          <Image
-            src={isOpen ? "/icons/minus.svg" : "/icons/plus.svg"}
-            width={24}
-            height={24}
-            alt="Dropdown icon"
-          />
-        </button>
+          className={cn("relative rounded-full flex justify-center items-center", isOpen ? "bg-[#3B6DFF]" : "bg-[#E6ECFE]")}
+          >
+          <div className="relative w-11 h-11 flex flex-col items-center justify-center">
+            <button className={cn("w-4 h-0.5 border-none absolute transition-opacity", isOpen ? "opacity-0 bg-white" : "opacity-100 bg-black")}></button>
+            <button className={cn("w-4 h-0.5 border-none absolute transition-transform duration-300", isOpen ? "rotate-0 bg-white" : "rotate-90 bg-black")}></button>
+          </div>
+        </div>
       </div>
       <p className={cn("text-xl text-[#707070] max-w-[780px] transition-all duration-300 ease-in-out overflow-hidden", isOpen ? "max-h-44 opacity-100 mt-6" : "max-h-0 opacity-0 mt-0")}>{answer}</p>
     </div>

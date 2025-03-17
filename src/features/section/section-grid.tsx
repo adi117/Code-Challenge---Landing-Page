@@ -9,7 +9,7 @@ interface SectionProps {
 
 const SectionGrid: FC<SectionProps> = ({ title, description, children }) => {
   return (
-    <div className="flex flex-col gap-14 items-center sm:px-5 px-10 py-20">
+    <div className="flex flex-col gap-14 items-center px-5 md:px-10 py-20">
       <div className="flex flex-col gap-5 max-w-[900px]">
         <h2 className="text-[32px] text-center md:text-5xl">{title}</h2>
         <p className="text-[#3D3D3D] text-center md:text-xl">{description}</p>
