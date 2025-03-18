@@ -1,5 +1,5 @@
 import SolutionSection from "@/features/solutions";
-import FQA from "@/features/fqa";
+import FAQ from "@/features/faq";
 import Footer from "@/features/footer";
 import About from "@/features/about-home";
 import HeroSection from "@/features/hero-section";
@@ -14,7 +14,7 @@ export default function Home() {
       <SolutionSection/>
       <Property/>
       <Testimonial/>
-      <FQA/>
+      <FAQ/>
       <Footer
       isBannerActive={true}
       />
