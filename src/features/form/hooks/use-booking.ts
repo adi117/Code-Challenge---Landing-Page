@@ -18,7 +18,7 @@ const useBooking= () => {
   useEffect(() => {
     const fetchBooking = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/booking");
+        const response = await axios.get("https://code-challenge-landing-page.vercel.app/booking");
         setBookingList(Array.isArray(response.data) ?  response.data : []);
       } catch (error) {
         setError(error);
@@ -31,7 +31,7 @@ const useBooking= () => {
 
   const addBooking = async (bookingData: BookingProps) => {
     try {
-      const response = await axios.post("http://localhost:3000/booking", bookingData, {
+      const response = await axios.post("https://code-challenge-landing-page.vercel.app/booking", bookingData, {
         headers: { 'Content-Type' : 'application/json'
         }});
         setBookingList((currentBooking) => [...currentBooking, response.data]);

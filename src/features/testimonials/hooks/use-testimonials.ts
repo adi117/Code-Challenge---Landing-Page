@@ -2,7 +2,7 @@ import axios from "axios";
 
 const fetchTestimonials = async () => {
   try {
-    const response = await axios.get("http://localhost:3000/testimonials");
+    const response = await axios.get("https://code-challenge-landing-page.vercel.app/testimonials");
     return response.data;
   } catch(error) {
     console.error(error);
