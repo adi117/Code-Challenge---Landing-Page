@@ -18,7 +18,7 @@ const Accordion: FC<AccordionProps> = ({ question, answer }) => {
         <h2 className="text-2xl">{question}</h2>
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className={cn("relative rounded-full flex justify-center items-center", isOpen ? "bg-[#3B6DFF]" : "bg-[#E6ECFE]")}
+          className={cn("relative rounded-full flex justify-center items-center", isOpen ? "bg-blue-500" : "bg-blue-50")}
           >
           <div className="relative w-11 h-11 flex flex-col items-center justify-center">
             <button className={cn("w-4 h-0.5 border-none absolute transition-opacity", isOpen ? "opacity-0 bg-white" : "opacity-100 bg-black")}></button>

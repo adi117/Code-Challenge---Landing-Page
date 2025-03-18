@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PropertyProvider } from "@/features/property/context/use-property";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <PropertyProvider>
+          {children}
+        </PropertyProvider>
+        </body>
     </html>
   );
 }

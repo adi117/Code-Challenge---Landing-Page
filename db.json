@@ -1,22 +1,22 @@
 {
   "solution": [
     {
-      "id" : 1,
-      "title" : "Property Search and Listing",
-      "description" : "Discover available properties, uncover your ideal living space, start exploring now.",
-      "imageUrl" : "/solutions/magnifier.svg"
+      "id": 1,
+      "title": "Property Search and Listing",
+      "description": "Discover available properties, uncover your ideal living space, start exploring now.",
+      "imageUrl": "/solutions/magnifier.svg"
     },
     {
-      "id" : 2,
-      "title" : "Property Valuation",
-      "description" : "Thorough property assessment, accurate valuations, crucial for informed real estate decisions.",
-      "imageUrl" : "/solutions/chart.svg"
+      "id": 2,
+      "title": "Property Valuation",
+      "description": "Thorough property assessment, accurate valuations, crucial for informed real estate decisions.",
+      "imageUrl": "/solutions/chart.svg"
     },
     {
-      "id" : 3,
-      "title" : "Property Management",
-      "description" : "Professional property oversight, maximizing profitability, and preserving asset value seamlessly.",
-      "imageUrl" : "/solutions/home.svg"
+      "id": 3,
+      "title": "Property Management",
+      "description": "Professional property oversight, maximizing profitability, and preserving asset value seamlessly.",
+      "imageUrl": "/solutions/home.svg"
     }
   ],
   "fqa": [
@@ -44,6 +44,86 @@
       "id": 5,
       "question": "How can I improve my credit score before applying for a mortgage?",
       "answer": "Pay bills on time, reduce debt, avoid new credit inquiries, and check your credit report for errors."
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "name": "Dreamland Estates",
+      "location": "St. Utica, Pennsylvania 57867",
+      "price": 611.52,
+      "discount": -41,
+      "rating": 4.8,
+      "category": "Home",
+      "image": "/properties/dreamland-estates.webp"
+    },
+    {
+      "id": 2,
+      "name": "Visionary Vistas Realty",
+      "location": "Cir. Shiloh, Hawaii 81063",
+      "price": 753.99,
+      "discount": -32,
+      "rating": 4.6,
+      "category": "Guesthouse",
+      "image": "/properties/visionary-vistas-realty.webp"
+    },
+    {
+      "id": 3,
+      "name": "Tranquil Haven Homes",
+      "location": "St. Celina, Delaware 10299",
+      "price": 845.5,
+      "discount": -23,
+      "rating": 4.4,
+      "category": "Apartment",
+      "image": "/properties/tranquil-haven-homes.webp"
+    },
+    {
+      "id": 4,
+      "name": "Meadow Brook Estates",
+      "location": "St. Utica, Pennsylvania 57867",
+      "price": 611.52,
+      "discount": -41,
+      "rating": 4.7,
+      "category": "Home",
+      "image": "/properties/meadow-brook-estates.webp"
+    },
+    {
+      "id": 5,
+      "name": "Aspen Ridge Estates",
+      "location": "St. Utica, Pennsylvania 57867",
+      "price": 543.5,
+      "discount": -20,
+      "rating": 4.3,
+      "category": "Hotel",
+      "image": "/properties/aspen-ridge-estates.webp"
+    },
+    {
+      "id": 6,
+      "name": "Harmony Hills Realty",
+      "location": "St. Utica, Pennsylvania 57867",
+      "price": 453.23,
+      "discount": -23,
+      "rating": 4,
+      "category": "Apartment",
+      "image": "/properties/harmony-hills-realty.webp"
+    }
+  ],
+  "booking": [
+    {
+      "id": "612b",
+      "name": "Muhammad Adi Wicaksono",
+      "email": "muhammadiwicaksono@gmail.com",
+      "phoneNumber": "6285225150778",
+      "properties": {
+        "id": 0,
+        "name": "",
+        "location": "",
+        "price": 0,
+        "discount": 0,
+        "rating": 0,
+        "category": "",
+        "image": ""
+      }
     }
   ]
 }
