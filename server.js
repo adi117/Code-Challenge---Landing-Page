@@ -1,8 +1,7 @@
-/* tslint:disable no-var-requires */
-const jsonServer = require("json-server");
+import jsonServer from "json-server";
 
 const server = jsonServer.create();
-const router = jsonServer.router("db/db.json");
+const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
@@ -13,6 +12,6 @@ server.use(
 );
 server.use(router);
 
-server.listen(3000, () => {
-  console.log("JSON Server is running on port 3000");
+server.listen(3003, () => {
+  console.log("JSON Server is running on port 3003");
 });
