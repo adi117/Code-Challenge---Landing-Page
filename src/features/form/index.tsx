@@ -60,7 +60,7 @@ const Form = () => {
           <form
             onSubmit={handleSubmit}
             action=""
-            className='flex flex-col w-full'
+            className='flex flex-col w-full gap-6'
           >
             <InputField title='Name' placeholder='Name' name='name' />
             <InputField title='Email' placeholder='Email' name='email' />

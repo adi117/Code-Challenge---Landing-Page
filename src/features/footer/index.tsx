@@ -1,11 +1,16 @@
 import Image from "next/image";
 import BottomBanner from "./bottom-banner";
+import { FC } from "react";
 
-const Footer = () => {
+interface FooterProps {
+  isBannerActive: boolean;
+}
+
+const Footer : FC<FooterProps> = ({ isBannerActive }) => {
 
   return (
     <div className="flex flex-col gap-24 m-5 md:m-10">
-      <BottomBanner />
+        {isBannerActive && <BottomBanner />}
       <footer className="grid grid-cols-1 sm:grid-cols-2 w-full">
         <div className="flex flex-col mb-10 md:pr-40">
           <div className="text-xl font-semibold flex flex-col gap-2 items-center md:items-start">

@@ -11,9 +11,11 @@ interface PropertyProps {
   onSelect: () => void;
 }
 
-const PropertyCard: FC<PropertyProps> = ({ name, location, price, discount, rating, image, onSelect}) => {
+const PropertyCard: FC<PropertyProps> = ({ name, location, price, discount, rating, image, onSelect }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div
+      className="flex flex-col gap-4"
+      onClick={onSelect}>
       <div className="relative rounded-3xl overflow-hidden">
         <Image
           src={image}
@@ -24,13 +26,12 @@ const PropertyCard: FC<PropertyProps> = ({ name, location, price, discount, rati
         />
         <div className="absolute right-0 bottom-0 rounded-tl-3xl bg-white border-white border-t-4 border-l-4 w-fit overflow-hidden">
           <button
-          onClick={onSelect}
-          className= "bg-blue-500 px-6 py-2">
+            className="bg-blue-500 px-6 py-2">
             <Image
-            src="/icons/arrow-up-right.svg"
-            width={20}
-            height={20}
-            alt="Arrow icon"
+              src="/icons/arrow-up-right.svg"
+              width={20}
+              height={20}
+              alt="Arrow icon"
             />
           </button>
         </div>

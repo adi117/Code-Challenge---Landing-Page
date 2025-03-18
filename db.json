@@ -125,5 +125,28 @@
         "image": ""
       }
     }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sophia Miller",
+      "role": "Happy Homeowner",
+      "message": "Mai Home made our home-buying process effortless! Their team guided us every step of the way, ensuring we found the perfect house within our budget.",
+      "imageUrl": "/testimonials/sophia-miller.webp"
+    },
+    {
+      "id": 2,
+      "name": "James Carter",
+      "role": "Satisfied Renter",
+      "message": "I was looking for a rental property, and Mai Home’s listings were incredibly detailed and easy to navigate. Within days, I found my dream apartment!",
+      "imageUrl": "/testimonials/james-carter.webp"
+    },
+    {
+      "id": 3,
+      "name": "Olivia Roberts",
+      "role": "Real Estate Agent",
+      "message": "As a real estate agent, partnering with Mai Home has been a game-changer. Their platform provides excellent exposure for my listings, and their support team is fantastic!",
+      "imageUrl": "/testimonials/olivia-roberts.webp"
+    }
   ]
 }
