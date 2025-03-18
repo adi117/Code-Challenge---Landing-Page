@@ -148,5 +148,39 @@
       "message": "As a real estate agent, partnering with Mai Home has been a game-changer. Their platform provides excellent exposure for my listings, and their support team is fantastic!",
       "imageUrl": "/testimonials/olivia-roberts.webp"
     }
-  ]
+  ],
+  "company": {
+    "name": "Mai Home",
+    "mission": [
+      {
+        "title": "Trust & Transparency",
+        "description": "Providing accurate and up-to-date property listings with complete details."
+      },
+      {
+        "title": "Excellence & Innovation",
+        "description": "Using cutting-edge technology to simplify the home-buying and rental process."
+      },
+      {
+        "title": "Customer-Centric Approach",
+        "description": "Ensuring that every client receives personalized and professional service."
+      }
+    ],
+    "team": [
+      {
+        "name": "Ethan Reynolds",
+        "position": "Founder & CEO",
+        "imageUrl": "/team/ethan-reynolds.webp"
+      },
+      {
+        "name": "Sophia Martinez",
+        "position": "Head of Operations",
+        "imageUrl": "/team/sophia-martinez.webp"
+      },
+      {
+        "name": "Daniel Carter",
+        "position": "Customer Success Manager",
+        "imageUrl": "/team/daniel-carter.webp"
+      }
+    ]
+  }
 }
