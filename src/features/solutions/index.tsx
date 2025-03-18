@@ -7,6 +7,7 @@ const SolutionSection = () => {
       <SectionGrid
         title="Tailored Real Estate Solutions for You"
         description="Unlock the perfect property. Discover tailored real estate solutions designed to meet your needs with precision and expertise"
+        isHeaderActive={true}
       >
         <SolutionList />
       </SectionGrid>
