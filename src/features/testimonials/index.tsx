@@ -7,6 +7,7 @@ export const Testimonial = () => {
       <SectionGrid
       title="What Our Happy Clients Say"
       description="At Mai Home, we take pride in helping people find their perfect homes. Don't just take our word for it—hear from our happy homeowners, renters, and real estate partners about their experiences with us!"
+      isHeaderActive={true}
       >
         <TestimonialList />
       </SectionGrid>
