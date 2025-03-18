@@ -16,7 +16,7 @@ export default function Page() {
       <div className="bg-blue-500 w-full px-5 md:px-44">
         <Headers />
       </div>
-      <div className="flex flex-col md:flex-row px-5 md:px-10 mt-10 w-full gap-20">
+      <div className="flex flex-col md:flex-row px-5 md:px-10 mt-10 w-full gap-5 md:gap-20">
         <div
           className={cn("flex flex-col gap-5 mb-4", selectedProperty ? "w-full md:w-2/3" : "hidden")}>
           <p className="line-clamp-1 md:line-clamp-none text-3xl font-medium md:text-6xl mb-3">{selectedProperty?.name}</p>
@@ -56,6 +56,7 @@ export default function Page() {
         </div>
         <div
           className={cn("mt-3", selectedProperty ? "w-full md:w-1/3" : "w-full")}>
+            <p className={cn("text-2xl font-medium mb-4", selectedProperty ? "block" : "hidden")}>Others property</p>
           <PropertyLists />
         </div>
       </div>

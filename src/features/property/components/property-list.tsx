@@ -12,7 +12,7 @@ const PropertyLists = () => {
 
   const handleArrowClick = (property: Property) => {
     setSelectedProperty(property);
-    router.push("/unit");;
+    router.push("/unit");
   }
 
   return (
