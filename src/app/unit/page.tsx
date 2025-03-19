@@ -23,7 +23,7 @@ export default function Page() {
       description="Explore a wide range of premium homes, apartments, and rental properties tailored to your needs. Whether you're buying, renting, or investing, Mai Home offers exclusive listings to help you find your dream space with ease."
       isHeaderActive={selectedProperty ? false : true}
       >
-        <div className="flex flex-col md:flex-row px-5 md:px-10 w-full gap-5 md:gap-20">
+        <div className="flex flex-col md:flex-row w-full gap-5 md:gap-20">
           <div
             className={cn("flex flex-col gap-5 mb-4", selectedProperty ? "w-full md:w-2/3" : "hidden")}>
             <p className="line-clamp-1 md:line-clamp-none text-3xl font-medium md:text-6xl mb-3">{selectedProperty?.name}</p>

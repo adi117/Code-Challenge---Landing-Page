@@ -18,6 +18,7 @@ const About = () => {
           width={0}
           height={0}
           alt="About us photo"
+          unoptimized
           className="h-full w-full object-contain"
           />
           <div className="flex flex-col gap-14 justify-between p-8 border-[1px] border-[#C8C8C8] rounded-4xl">
