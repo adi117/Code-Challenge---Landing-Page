@@ -20,6 +20,7 @@ const AboutUs = () => {
               width={0}
               height={0}
               alt="About us photo"
+              unoptimized
               className="w-full h-60 object-cover rounded-3xl"
             />
           </div>
