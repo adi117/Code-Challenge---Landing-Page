@@ -9,17 +9,19 @@ import { useProperties } from "../property/context/use-property";
 const Headers = () => {
 
   const [isSidemenuOpen, setSidemenuOpen] = useState(false);
-  const {setSelectedCategory} = useProperties();
+  const { setSelectedCategory } = useProperties();
 
   return (
     <nav className="text-white flex w-full h-fit items-center p-5 bg-white/20 rounded-[18px] my-6 relative">
       <div className="w-1/2 md:w-1/5">
-        <Image
-          src="/header/company-logo.svg"
-          width={170}
-          height={32}
-          alt="Company logo"
-        />
+        <Link href="/">
+          <Image
+            src="/header/company-logo.svg"
+            width={170}
+            height={32}
+            alt="Company logo"
+          />
+        </Link>
       </div>
       <div className="w-3/5 items-center justify-center px-20 hidden md:block">
         <ul className="flex justify-between w-full">
