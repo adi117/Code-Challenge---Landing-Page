@@ -27,22 +27,24 @@ const Headers = () => {
           <li className="p-2"><Link href="/team">Team</Link></li>
         </ul>
       </div>
-      <div className="w-1/5 gap-2 hidden md:block">
-        <button className="px-6 py-2">Register</button>
-        <button className="px-6 py-2 text-black bg-white border-[1px] rounded-xl border-[#DDDDDD] font-medium">Login</button>
+      <div className="w-1/5">
+        <div className="gap-2 hidden md:flex">
+          <button className="px-6 py-2" name="register-button">Register</button>
+          <button className="px-6 py-2 text-black bg-white border-[1px] rounded-xl border-[#DDDDDD] font-medium" name="login-button">Login</button>
+        </div>
+        <div
+          className="w-1/2 flex justify-end items-end md:hidden"
+          onClick={() => setSidemenuOpen(true)}
+        >
+          <Image
+            src="/icons/hamburger-menu.svg"
+            width={24}
+            height={24}
+            alt="Hamburger Menu"
+          />
+        </div>
       </div>
-      <div
-      className="w-1/2 flex justify-end items-end md:hidden"
-      onClick={() => setSidemenuOpen(true)}
-      >
-        <Image
-          src="/icons/hamburger-menu.svg"
-          width={24}
-          height={24}
-          alt="Hamburger Menu"
-        />
-      </div>
-      <Sidemenu isOpen={isSidemenuOpen} setSidemenuOpen={setSidemenuOpen}/>
+      <Sidemenu isOpen={isSidemenuOpen} setSidemenuOpen={setSidemenuOpen} />
     </nav>
   )
 }

@@ -65,7 +65,7 @@ const Form = () => {
             <InputField title='Name' placeholder='Name' name='name' />
             <InputField title='Email' placeholder='Email' name='email' />
             <InputField title='Phone Number' placeholder='Your Phone Number' name='phoneNumber' />
-            <button className="text-white md:text-xl bg-blue-500 px-14 py-3.5 rounded-xl w-full mt-3">Book Now</button>
+            <button className="text-white md:text-xl bg-blue-500 px-14 py-3.5 rounded-xl w-full mt-3" name='book-button'>Book Now</button>
           </form>
         )}
       </Formik>

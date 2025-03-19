@@ -33,6 +33,7 @@ const Sidemenu: FC<SidemenuProps> = ({ isOpen, setSidemenuOpen }) => {
       <button
       className="absolute right-5 top-5 text-xl"
       onClick={() => setSidemenuOpen(false)}
+      name="close-sidemenu"
       >
         X
       </button>

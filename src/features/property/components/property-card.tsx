@@ -19,14 +19,15 @@ const PropertyCard: FC<PropertyProps> = ({ name, location, price, discount, rati
       <div className="relative group">
         <Image
           src={image}
-          width={435}
-          height={210}
+          width={410}
+          height={200}
           alt={`Image of ${name}`}
-          className="object-cover md:w-[435px] md:h-[210px] w-full rounded-3xl h-full"
+          className="object-cover md:w-[410px] md:h-[210px] w-full rounded-3xl h-full"
         />
         <div className="absolute right-0 bottom-0 rounded-tl-3xl rounded-br-3xl bg-white border-white border-t-4 border-l-4 w-fit overflow-hidden">
           <button
-            className="bg-blue-500 px-6 py-2">
+            className="bg-blue-500 px-6 py-2"
+            name="arrow-button">
             <Image
               src="/icons/arrow-up-right.svg"
               width={20}

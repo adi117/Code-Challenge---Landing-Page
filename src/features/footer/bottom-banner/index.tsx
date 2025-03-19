@@ -26,8 +26,9 @@ const BottomBanner = () => {
           <button
           onClick={() => handleExplore()}
           className="text-black text-xl bg-white px-14 py-3.5 rounded-xl w-52"
+          name="explore-button"
           >Explore</button>
-          <button className="px-14 py-3.5 rounded-xl border-white border-[1px] w-52">Learn More</button>
+          <button className="px-14 py-3.5 rounded-xl border-white border-[1px] w-52" name="learn-more-button">Learn More</button>
         </div>
       </div>
     </div>
