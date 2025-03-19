@@ -32,7 +32,7 @@ export const PropertyProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const fetchPropertyData = async () => {
       try {
-        const response = await axios.get("https://server-json-landing-page-a7jxhkb8m.vercel.app/properties");
+        const response = await axios.get("https://json-server-code-challenge.vercel.app/properties");
         setProperties(response.data);
         setLoading(false);
       } catch (error) {

@@ -19,48 +19,6 @@
 
 @font-face {
   font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-ThinItalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-ExtraLightItalic.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
   src: url("/fonts/ProdigySans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -98,47 +56,5 @@
   font-family: "Prodigy Sans";
   src: url("/fonts/ProdigySans-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Prodigy Sans";
-  src: url("/fonts/ProdigySans-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
   font-style: italic;
 }

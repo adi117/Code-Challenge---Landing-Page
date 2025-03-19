@@ -2,7 +2,7 @@ import axios from "axios";
 
 const fetchCompanyData = async () => {
   try {
-    const response = await axios.get("https://server-json-landing-page-a7jxhkb8m.vercel.app/company");
+    const response = await axios.get("https://json-server-code-challenge.vercel.app/company");
     return response.data;
   } catch(error) {
     console.error(error);
