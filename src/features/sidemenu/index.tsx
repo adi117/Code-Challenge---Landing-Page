@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FC } from "react";
 import { cn } from "@/utils/cn";
 
@@ -30,13 +31,14 @@ const Sidemenu: FC<SidemenuProps> = ({ isOpen, setSidemenuOpen }) => {
           onClick={() => setSidemenuOpen(false)}
         >Team</Link></li>
       </ul>
-      <button
-      className="absolute right-5 top-5 text-xl"
+      <Image
+      src="/icons/close.svg"
+      width={32}
+      height={32}
+      alt="Close button"
       onClick={() => setSidemenuOpen(false)}
-      name="close-sidemenu"
-      >
-        X
-      </button>
+      className="absolute right-6 top-6"
+      />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const TestimonialCard: FC<TestimonialsProps> = ({ name, role, message, imageUrl}
             width={435}
             height={210}
             alt={`Image of ${name}`}
-            className="object-cover md:w-[435px] md:h-[210px] w-full h-full"
+            className="object-cover md:h-[210px] w-full h-full"
           />
           <div className="absolute right-0 top-0 rounded-bl-3xl bg-white border-white border-b-2 border-l-2 w-fit overflow-hidden">
             <div
@@ -23,7 +23,7 @@ const TestimonialCard: FC<TestimonialsProps> = ({ name, role, message, imageUrl}
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex font-medium text-xl justify-between gap-4 md:gap-0">
-            <p className="text-sm text-gray-500">{message}</p>
+            <p className="text-sm text-gray-500 text-center md:text-left">{message}</p>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ interface PropertyProps {
 const PropertyCard: FC<PropertyProps> = ({ name, location, price, discount, rating, image, onSelect }) => {
   return (
     <div
-      className="flex flex-col gap-4"
+      className="flex flex-col gap-4 w-full"
       onClick={onSelect}>
       <div className="relative group">
         <Image
@@ -22,7 +22,7 @@ const PropertyCard: FC<PropertyProps> = ({ name, location, price, discount, rati
           width={410}
           height={200}
           alt={`Image of ${name}`}
-          className="object-cover md:w-[410px] md:h-[210px] w-full rounded-3xl h-full"
+          className="object-cover md:h-[240px] w-full rounded-3xl h-full"
         />
         <div className="absolute right-0 bottom-0 rounded-tl-3xl rounded-br-3xl bg-white border-white border-t-4 border-l-4 w-fit overflow-hidden">
           <button

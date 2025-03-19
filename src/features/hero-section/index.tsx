@@ -2,7 +2,7 @@ import Headers from "../header";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen w-screen bg-[url(/hero-section/bg-hero.webp)] overflow-hidden flex flex-col justify-start items-center text-white px-5 md:px-44">
+    <section className="relative h-screen w-screen bg-[url(/hero-section/bg-hero.webp)] bg-cover bg-no-repeat overflow-hidden flex flex-col justify-start items-center text-white px-5 md:px-44">
       <Headers />
       <div>
         <div className="flex flex-col gap-5 justify-center items-center text-center mt-10 md:mt-20">

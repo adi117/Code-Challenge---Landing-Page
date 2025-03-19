@@ -21,6 +21,9 @@ interface PropertyContextType {
   error: unknown;
   selectedProperty: PropertyProps | null;
   setSelectedProperty: (selectedProperty: PropertyProps) => void;
+  categoryLists: string[];
+  selectedCategory: string;
+  setSelectedCategory: (category: string) => void;
 }
 const PropertyContext = createContext<PropertyContextType | undefined>(undefined);
 
@@ -29,12 +32,20 @@ export const PropertyProvider = ({ children }: { children: ReactNode }) => {
   const [selectedProperty, setSelectedProperty] = useState<PropertyProps | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<unknown>(null);
+  const [categoryLists, setCategoryList] = useState<string[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+
+
   useEffect(() => {
     const fetchPropertyData = async () => {
       try {
         const response = await axios.get("https://json-server-code-challenge.vercel.app/properties");
         setProperties(response.data);
         setLoading(false);
+        
+        const properties : PropertyProps[] = response.data;
+        setProperties(properties);
+        setCategoryList(["All",...new Set(properties.map((property: PropertyProps) => property.category))])
       } catch (error) {
         setError(error);
         setLoading(false);
@@ -45,7 +56,7 @@ export const PropertyProvider = ({ children }: { children: ReactNode }) => {
   },[])
 
   return (
-    <PropertyContext.Provider value={{properties, loading, error, selectedProperty, setSelectedProperty}}>
+    <PropertyContext.Provider value={{properties, loading, error, selectedProperty, setSelectedProperty, categoryLists, selectedCategory, setSelectedCategory}}>
       {children}
     </PropertyContext.Provider>
   )
@@ -53,6 +64,6 @@ export const PropertyProvider = ({ children }: { children: ReactNode }) => {
 
 export const useProperties = () => {
   const context = useContext(PropertyContext);
-  if (!context) throw new Error("useProducts muse within PropertyProvider");
+  if (!context) throw new Error("useProperties muse within PropertyProvider");
   return context;
 }
