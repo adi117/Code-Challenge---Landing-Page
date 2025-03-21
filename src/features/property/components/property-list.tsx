@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import PropertyCard from "./property-card";
 import { Property } from "@/type/properties";
 import CategoryFilter from "./category-filter";
+import { cn } from "@/utils/cn";
 
 
 const PropertyLists = () => {
 
-  const { properties, selectedCategory, setSelectedProperty } = useProperties();
+  const { properties, selectedCategory, setSelectedProperty, selectedProperty } = useProperties();
   const router = useRouter();
 
   const handleArrowClick = (property: Property) => {
@@ -24,7 +25,7 @@ const PropertyLists = () => {
   return (
     <div className="grid grid-cols-1 w-full">
       <CategoryFilter />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center justify-center w-full">
+      <div className={cn("grid grid-cols-1 gap-5 items-center justify-center w-full", selectedProperty ? "grid-cols-1" : "md:grid-cols-3")}>
         {filteredProperties.map((property) => (
           <div key={property.id}>
             <PropertyCard

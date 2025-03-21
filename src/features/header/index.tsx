@@ -9,7 +9,11 @@ import { useProperties } from "../property/context/use-property";
 const Headers = () => {
 
   const [isSidemenuOpen, setSidemenuOpen] = useState(false);
-  const { setSelectedCategory } = useProperties();
+  const { setSelectedProperty } = useProperties();
+
+  const handleSelectedMenu = () => {
+    setSelectedProperty(null);
+  }
 
   return (
     <nav className="text-white flex w-full h-fit items-center p-5 bg-white/20 rounded-[18px] my-6 relative">
@@ -25,10 +29,10 @@ const Headers = () => {
       </div>
       <div className="w-3/5 items-center justify-center px-20 hidden md:block">
         <ul className="flex justify-between w-full">
-          <li className="p-2"><Link href="/" onClick={() => setSelectedCategory("All")}>Overview</Link></li>
-          <li className="p-2"><Link href="/unit" onClick={() => setSelectedCategory("All")}>Unit</Link></li>
-          <li className="p-2"><Link href="/about-us" onClick={() => setSelectedCategory("All")}>About Us</Link></li>
-          <li className="p-2"><Link href="/team" onClick={() => setSelectedCategory("All")}>Team</Link></li>
+          <li className="p-2"><Link href="/" onClick={() => handleSelectedMenu()}>Overview</Link></li>
+          <li className="p-2"><Link href="/unit" onClick={() => handleSelectedMenu()}>Unit</Link></li>
+          <li className="p-2"><Link href="/about-us" onClick={() => handleSelectedMenu()}>About Us</Link></li>
+          <li className="p-2"><Link href="/team" onClick={() => handleSelectedMenu()}>Team</Link></li>
         </ul>
       </div>
       <div className="w-1/2 md:w-1/5 items-end justify-end">

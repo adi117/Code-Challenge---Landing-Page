@@ -20,7 +20,7 @@ interface PropertyContextType {
   loading: boolean;
   error: unknown;
   selectedProperty: PropertyProps | null;
-  setSelectedProperty: (selectedProperty: PropertyProps) => void;
+  setSelectedProperty: (selectedProperty: PropertyProps | null) => void;
   categoryLists: string[];
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
