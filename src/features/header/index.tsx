@@ -9,10 +9,11 @@ import { useProperties } from "../property/context/use-property";
 const Headers = () => {
 
   const [isSidemenuOpen, setSidemenuOpen] = useState(false);
-  const { setSelectedProperty } = useProperties();
+  const { setSelectedProperty, setSelectedCategory } = useProperties();
 
   const handleSelectedMenu = () => {
     setSelectedProperty(null);
+    setSelectedCategory("All");
   }
 
   return (
